@@ -1,0 +1,29 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body article {
+    width: 50%;
+}
+
+body article section:nth-of-type(1) {
+    background-color: rgba(198, 197, 197, 0.538);
+}
+
+body article section:nth-of-type(1) fieldset {
+    display: flex;
+}
+
+section:nth-of-type(2) {
+    background-color: rgba(206, 161, 247, 0.531);
+}
+
+section:nth-of-type(3) {
+    background-color: rgba(163, 247, 161, 0.522);
+}
+
+section:nth-of-type(4) {
+    background-color: rgba(252, 181, 143, 0.487);
+}

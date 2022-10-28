@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mwst</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <article>
+        <section>
+            <h1>Was soll berechnet werden?</h1>
+            <fieldset>
+                <input type="radio" name="wasWirBerechnen" id="NzB" value="NzB"> Mehrwertsteuer aufschlagen
+                (Netto zu
+                Brutto)</input>
+                <input type="radio" name="wasWirBerechnen" id="BzN" value="BzN"> Mehrwertsteuer abziehen
+                (Brutto zu
+                Netto)</input>
+                <!-- wenn die Radios den gleichen Namen haben, dann kann nur einer ausgewählt werden. -->
+            </fieldset>
+        </section>
+        <section>
+            <h1>Mehwertsteuersatz</h1>
+            <fieldset>
+                <input type="radio" id="sieben" name="prozent" value="7"> 7%</input>
+                <input type="radio" id="neunzehn" name="prozent" value="19"> 19%</input>
+            </fieldset>
+        </section>
+        <section>
+            <label></label>
+            <input id="wert" type="number"></input>
+            </form>
+            <button type="button" onclick="rechne()" value="radioKombination">berechnen</button>
+        </section>
+        <section>
+            <h1>Ergebnis</h1>
+            <form>
+                <h1>Mehrwertsteuerbetrag</h1>
+                <p id="Mwstbetrag"></p>
+            </form>
+            <div>
+                <h2 id="Endausgabe">platzhalter Ergebnis</h2>
+            </div>
+        </section>
+    </article>
+</body>
+<script src="./assets/js/main.js"></script>
+
+</html>
